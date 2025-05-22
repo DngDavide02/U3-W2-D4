@@ -1,0 +1,250 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+  background-color: #c1a57b;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #2c1f0b;
+}
+
+.navbar {
+  background-color: #3b2e2a;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  background-color: #2b1e1a;
+  color: #d1c4b2;
+  padding: 25px 0;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.alert {
+  background: linear-gradient(135deg, #6d4c41, #a1887f);
+  color: #fff;
+  border: none;
+  padding: 50px 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeSlideIn 0.8s ease-out both;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.alert h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.alert p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  opacity: 0.95;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  padding-bottom: 50px;
+}
+
+.text-center h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4e342e;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.btn-group .btn {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+  margin: 0 6px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  border: 2px solid #8d6e63;
+  color: #4e342e;
+  background-color: #fffaf3;
+}
+
+.btn-group .btn:hover {
+  background-color: #8d6e63;
+  color: white;
+  transform: scale(1.05);
+  border-color: #6d4c41;
+}
+
+.btn-group .btn-primary {
+  background-color: #6d4c41;
+  border-color: #6d4c41;
+  color: white;
+}
+
+.btn-group .btn-primary:hover {
+  background-color: #5a3d33;
+  border-color: #5a3d33;
+}
+
+.search-bar {
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  background-color: #fffaf3;
+  border: 2px solid #e0d0b4;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 6px 16px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar:focus-within {
+  border-color: #8d6e63;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  color: #4e342e;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 8px 0;
+}
+
+.search-bar input::placeholder {
+  color: #a1887f;
+  opacity: 0.8;
+}
+
+.single-book-card.selected-book {
+  border: 3px solid #5a3d33;
+  background-color: #fdf5e6;
+  box-shadow: 0 12px 24px rgba(90, 61, 51, 0.3);
+  transform: scale(1.02);
+}
+
+.card {
+  background-color: #fffaf3;
+  border-radius: 12px;
+  border: 2px solid #e0d0b4;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 280px;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4e342e;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-body button {
+  background-color: #8d6e63;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  align-self: center;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+}
+
+.card-body button:hover {
+  background-color: #6d4c41;
+  transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 200px;
+  }
+
+  .alert h2 {
+    font-size: 1.6rem;
+  }
+
+  .alert p {
+    font-size: 1rem;
+  }
+}
+
+.comment-area-card {
+  background-color: #fffaf3;
+  border-radius: 12px;
+  border: 2px solid #e0d0b4;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+}
+.comment-area-sticky {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+}
+
+.comment-area-card:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.comment-area-card h5 {
+  font-size: 1.2rem;
+  color: #4e342e;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+}
