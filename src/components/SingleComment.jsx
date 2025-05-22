@@ -17,7 +17,7 @@ const SingleComment = ({ comment, refresh }) => {
   };
 
   return (
-    <ListGroup.Item>
+    <ListGroup.Item data-testid="single-comment">
       {comment.comment} – ⭐{comment.rate}
       <Button variant="danger" size="sm" className="float-end" onClick={deleteComment}>
         Delete
